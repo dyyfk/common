@@ -43,6 +43,9 @@ type JobStatus struct {
 	// be set in happens-before order across separate operations.
 	// It is represented in RFC3339 form and is in UTC.
 	LastReconcileTime *metav1.Time `json:"lastReconcileTime,omitempty"`
+	
+	// Test field for breezeML
+	BreezeMLField string
 }
 
 // +k8s:openapi-gen=true
